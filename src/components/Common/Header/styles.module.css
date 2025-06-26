@@ -1,0 +1,10 @@
+/* General link styles */
+.navBar {
+  background-color: var(--bg-color-footer);
+  color: var(--text-color);
+  z-index: 10;
+}
+.navLink {
+  font-family: "Merriweather", serif;
+  color: var(--text-color) !important;
+}

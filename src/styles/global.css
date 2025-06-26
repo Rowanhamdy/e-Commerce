@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+:root {
+  --bg-color: #ffffff;
+  --bg-color-footer: #f7f7fa;
+  --text-color: #000000;
+  --btn-bg: #ddc0a1;
+  --btn-text-color: #000000;
+  --description-color: #303030;
+  --border-color: #e3f0f5;
+  --background-image: url("../assets/images/images2.jpg");
+  --background-image2: url("../assets/images/images5.jpg");
+  --background-image3: url("../assets/images/images3.jpg");
+}
+[data-theme="dark"] {
+  --bg-color: #161616;
+  --bg-color-footer: #1b1b1b;
+  --bg-color-2: #fff;
+  --text-color-2: #161616;
+  --text-color: #ffffff;
+  --btn-bg: #444444;
+  --btn-text-color: #ffffff;
+  --overlay-bg: rgba(255, 255, 255, 0.15);
+  --description-color: #ddd;
+  --border-color: #2a2a2a;
+  --background-image: url("../assets/images/images1 (1).jpg");
+  --background-image2: url("../assets/images/images1 (2).jpg");
+  --background-image3: url("../assets/images/images1 (3).jpg");
+}
+
+body,
+html,
+#root {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a,
+button,
+input,
+textarea,
+label {
+  color: inherit;
+  background-color: transparent;
+  border-color: currentColor;
+} /* Buttons */
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.active {
+  text-decoration: underline;
+}
+.not-found {
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 100px;
+}
+.not-found p {
+  font-size: 50px;
+}
+/* ========================================Home============================================== */
+.mainText {
+  font-size: 60px;
+  color: var(--text-color);
+  font-family: "Merriweather", serif;
+}
+.description {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.8;
+  width: 550px;
+  color: var(--description-color);
+  margin: 20px 0 0;
+  letter-spacing: normal;
+  text-decoration: none solid rgba(255, 255, 255, 0.901);
+}
+.my-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(70%);
+}
+.back-theme1 , .back-theme2 ,.back-theme3{
+   background-size: cover;
+  background-repeat: no-repeat;
+}
+.back-theme1 {
+  background-image: var(--background-image);
+  background-position: center;
+}
+.back-theme2 {
+  background-image: var(--background-image2);
+  background-position: center;
+}
+.back-theme3 {
+  background-image: var(--background-image3);
+  background-position: top;
+}
+
+
+@media (max-width: 768px) {
+  .mainText {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    width: 250px;
+  }
+}
+
+.my-font {
+  font-family: "Merriweather", serif;
+  color: var(--text-color);
+}
+
+.content-below-carousel {
+  position: relative;
+  z-index: 1;
+  background-color: var(--bg-color);
+}
+
+/* ===============================new arrivals && best sellers ================================================ */
+.mainHead {
+  font-size: 32px;
+  font-family: "Merriweather", serif;
+  color: var(--text-color);
+}
+.mainInfo {
+  font-size: 18.15px;
+  color: var(--text-color);
+  margin: 20px 0 0;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 15px;
+  text-align: center;
+}
+.my-card {
+  position: relative;
+  overflow: hidden;
+}
+.card-body {
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.card-title,
+.card-text {
+  color: var(--text-color) !important;
+}
+/* ============================================to all cards============================================== */
+.details {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.my-card:hover .details {
+  opacity: 1;
+  transform: translateY(-70%);
+}
+@media (max-width: 1300px) and (min-width: 991px) {
+  .my-card:hover .details {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+/*=======================================about=============================================== */
+.bg-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
+}
+.bg-btn:hover {
+  background-color: #b49b7f;
+  color: #fff;
+}
+
+.my-icons {
+  background-color: #ddc0a1;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+.my-icons:hover {
+  opacity: 0.8;
+}
+.bg-team {
+  background-color: var(--bg-color-2);
+}
+/* =====================================background all components========================================== */
+.bg-all {
+  background-color: var(--bg-color);
+  min-height: 100%;
+}
+.my-color {
+  color: var(--text-color-2);
+}

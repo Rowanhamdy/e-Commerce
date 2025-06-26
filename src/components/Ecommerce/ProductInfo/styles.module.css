@@ -1,0 +1,38 @@
+.myCard {
+  position: relative;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color) ;
+  padding: 0 0 10px 0;
+  width: 800px;
+
+}
+
+.cardBody {
+  position: relative;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.viewDetails {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.myCard:hover .viewDetails {
+  opacity: 1;
+  transform: translateY(-70%);
+}
+.bgAll {
+  background-color: var(--bg-color);
+}

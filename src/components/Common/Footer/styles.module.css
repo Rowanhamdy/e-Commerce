@@ -1,0 +1,36 @@
+.footerContainer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--bg-color-footer);
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.textColor {
+  color: var(--text-color);
+}
+
+.iconColor {
+  color: #DDC0A1;
+}
+
+/* Responsive*/
+@media (max-width: 1250px)  {
+  .footerContainer {
+    text-align: left;
+  }
+
+  .footerContainer ul {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .footerContainer h2 {
+    margin-top: 20px;
+  }
+
+  .footerContainer .row > div {
+    margin-bottom:24px ;
+}
+}
