@@ -1,0 +1,1 @@
+import{j as s,m as i,a0 as r,R as l}from"./index-BCKULryH.js";const x=({records:t,renderItem:m,emptyMessage:n})=>{const a=t.length>0?t.map(e=>s.jsx(i,{xs:12,sm:6,md:4,lg:3,className:"d-flex  justify-content-center  mb-5 mt-2 ",children:m(e)},e.id)):s.jsx(r,{type:"empty",message:n});return s.jsx(l,{children:a})};export{x as G};
